@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-for i in range(0, 100):
-    print(", ".join("{:02d}".format(i)))
+print(", ".join("{:02d}".format(i) for i in range(0, 100)))
