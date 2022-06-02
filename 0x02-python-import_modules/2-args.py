@@ -1,12 +1,11 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     from sys import argv
-    num = len(argv)
-    if num == 1:
-        print("{:d} arguments.".format(num - 1))
-    elif num == 2:
-        print("{:d} argument:".format(num - 1))
-    else: 
-        print("{:d} arguments:".format(num -1))
-    for i in range(1, num):
-        print("{:d} : {:s}".format(i, argv[i]))
+    user_input= argv[1:]
+    size = len(user_input)
+    print("{:d} {:s}{:s}".
+          format(size,
+                 "arguments" if (size) is not 1 else "argument",
+                 "." if (size) is 0 else ":"))
+    for idx, arg in enumerate(user_input):
+        print("{:d}: {:s}".format(idx + 1, arg))
