@@ -5,7 +5,7 @@ if __name__ == "__main__":
     size = len(user_input)
     print("{:d} {:s} {:s}".
           format(size,
-                 "arguments" if (size) is not 1 else "argument",
-                 "." if (size) is 0 else ":"))
+                 "arguments" if size != 1 else "argument",
+                 "." if size == 0 else ":"))
     for n, arg in enumerate(user_input):
         print("{:d} : {:s}".format(n + 1, arg))
