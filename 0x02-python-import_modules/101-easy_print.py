@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-from . import python_iscool
+import python_iscool
