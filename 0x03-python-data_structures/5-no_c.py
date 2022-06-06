@@ -1,7 +1,3 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    for letters in my_string:
-        if letters in 'cC':
-            print('', end="")
-        else:
-            print(letters, end="")
+    return ("".join(c for c in my_string if c not in "Cc"))
