@@ -4,4 +4,4 @@ if __name__ == "__main__":
    all = dir(hidden_4)
    for string in all:
        if not string.startswith("__"):
-           print("{:s}".format(string))
+        print("{:s}".format(string))
