@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-from copy import copy
-
-
 def search_replace(my_list, search, replace):
     copy_list = []
     for i in range(len(my_list)):
