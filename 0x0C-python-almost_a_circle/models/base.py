@@ -13,7 +13,9 @@ class Base():
         __init__(self, id=None)
     """
     __nb_objects = 0
+
     def __init__(self, id=None):
+        """Initialize id, increment class attribute if no id and set as id"""
         if id:
             self.id = id
         else:
