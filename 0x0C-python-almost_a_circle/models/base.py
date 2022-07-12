@@ -4,7 +4,7 @@ Module contains class Base
 
 Contains private class __nb_objects, and class constructor __init__
 """
-class Base:
+class Base():
     """
     defines class Base
     Class Attributes:
